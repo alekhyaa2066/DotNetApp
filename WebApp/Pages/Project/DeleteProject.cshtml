@@ -1,0 +1,25 @@
+﻿
+@page "{projectId:int}"
+@model WebApp.Pages.Project.DeleteProjectModel
+@{
+    Layout = null;
+    @*Without Layout page*@
+}
+
+<!Doctype html>
+<html>
+<head>
+    <title>Delete</title>
+</head>
+<body>
+    <h2>Delete</h2>
+    <div class="alert alert-danger">
+        Are you sure you want to delete @Model.proj.PName ?
+    </div>
+
+    <form method="post">
+        <button type="submit" class="btn btn-danger">Yes</button>
+        <a asp-page="./Projects" class="btn btn-default">Cancel</a>
+    </form>
+</body>
+</html>

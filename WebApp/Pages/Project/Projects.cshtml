@@ -1,0 +1,35 @@
+﻿@page
+@model WebApp.Pages.Project.ProjectsModel
+@{
+}
+
+<h2 style="text-align:center">Projects</h2>
+
+<form method="get">
+    <div class="form-group">
+        <p>Search Projects by Skills</p>
+        <div class=" input-group">
+            <input type="search" class="form-control" asp-for="ReqSkill" />
+            <span class="input-group-btn">
+                <button class="btn btn-default">
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+
+            </span>
+
+        </div>
+    </div>
+</form>
+
+@*It is a partial view so that it can be rendered in other page as well. As long as the partial view gets the model info it can be rendered anywhere *@
+
+@foreach (var proj in Model.Projs)
+{
+    <partial name="_SummaryProject" model="proj" />
+}
+
+<a asp-page="\EditProject" class="btn btn-primary">Add Project</a>
+
+@*@section footer {
+        <div>Render Section's Footer</div>
+    }*@

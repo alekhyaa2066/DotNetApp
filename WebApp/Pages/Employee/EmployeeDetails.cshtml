@@ -1,0 +1,40 @@
+﻿@page  "{employeeId:int}"
+@*it describes what the path should look like to reach this page. this url path contains a parameter. So the path will be /Employees/EmployeeDetails/10001*@
+
+@model WebApp.Pages.Employee.EmployeeDetailsModel
+@{
+    ViewData["Title"] = "EmployeeDetails";
+}
+
+<h2> @Model.Employee.EName Details</h2>
+
+<div>
+    Employee Id : @Model.Employee.EId
+</div>
+
+<div>
+    Delivery Unit : @Model.Employee.DU
+</div>
+
+<div>
+    Primary Skill : @Model.Employee.Skills
+</div>
+
+<div>
+    Experience : @Model.Employee.Experience
+</div>
+
+<div>
+    Project Related to your skill : @ViewData["Project"]
+</div>
+
+@if (Model.UpdateMessage != null)
+{
+    <div class="alert alert-info">@Model.UpdateMessage</div>
+}
+
+@if (Model.AddMessage != null)
+{
+    <div class="alert alert-info">@Model.AddMessage</div>
+}
+<a asp-page="./Employees" class="btn btn-default">All Employees</a>

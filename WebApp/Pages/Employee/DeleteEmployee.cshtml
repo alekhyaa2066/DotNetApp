@@ -1,0 +1,24 @@
+﻿@page "{employeeId:int}"
+@model WebApp.Pages.Employee.DeleteEmployeeModel
+@{
+    Layout = null;
+}
+
+<!Doctype html>
+
+<html>
+<head>
+    <title>Delete</title>
+</head>
+<body>
+    <h2>Delete</h2>
+    <div class="alert alert-danger">
+        Are you sure you want to delete @Model.emp.EName ?
+    </div>
+
+    <form method="post">
+        <button type="submit" class="btn btn-danger">Yes</button>
+        <a asp-page="./Employees" class="btn btn-default">Cancel</a>
+    </form>
+</body>
+</html>

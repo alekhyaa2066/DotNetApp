@@ -1,0 +1,48 @@
+﻿@page "{employeeId:int?}"
+
+@model WebApp.Pages.Employee.EditEmployeeModel
+@{
+    ViewData["Title"] = "EditEmployee";
+}
+
+<form method="post">
+    <input type="hidden" asp-for="Emp.EId" />
+
+    <div class="form-group">
+        <label asp-for="Emp.EName"></label>
+        <input asp-for="Emp.EName" class="form-control" />
+        <span class="text-danger" asp-validation-for="Emp.EName"></span>
+        @*asp-validation-for creates the default validation message that specified for this property in .Data.Employee*@
+
+    </div>
+    <div class="form-group">
+        <label asp-for="Emp.Skills"></label>
+        <input asp-for="Emp.Skills" class="form-control" />
+        <span class="text-danger" asp-validation-for="Emp.Skills"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Emp.MobileNo"></label>
+        <input asp-for="Emp.MobileNo" class="form-control" />
+        <span class="text-danger" asp-validation-for="Emp.MobileNo"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Emp.Experience"></label>
+        <input asp-for="Emp.Experience" class="form-control" />
+        <span class="text-danger" asp-validation-for="Emp.Experience"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Emp.DU"></label>
+        <select class="form-control" asp-for="Emp.DU" asp-items="Model.DU"></select>
+        @*asp-item takes IEnumerable<SelectListItems>*@
+        <span class="text-danger" asp-validation-for="Emp.DU"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

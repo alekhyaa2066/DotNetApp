@@ -1,0 +1,83 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox"style="align-self:center">
+        <div class="item active">
+            <a class="btn btn-default" href="https://www.lntinfotech.com/">
+                <img src="~/images/lti.jpg" alt="LTI"/>
+            </a>&nbsp; <span>LTI (NSE: LTI) is a global technology consulting and digital solutions Company helping more than 475 clients</span>
+            <div class="carousel-caption" role="option">
+                <p>
+                    
+                    @*<a class="btn btn-default" href="https://www.fosfor.com/">
+                    <img src="~/images/banner1.png" alt="Data Commerce For unlimited enterprise" class="img-responsive" />
+                    </a>*@
+                        
+                    
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <a class="btn btn-default" href="https://www.lntinfotech.com/enterprise-solutions/aws/">
+                <img src="~/images/banner2.png" alt="Accelerte Digital journeys through  AWS with LTI" class="img-responsive" />
+            </a>
+                <div class="carousel-caption" role="option">
+                    <p>
+                        @*<a class="btn btn-default" href="https://www.lntinfotech.com/enterprise-solutions/aws/">
+                            <img src="~/images/banner2.png" alt="Accelerte Digital journeys through  AWS with LTI" class="img-responsive" />
+                        </a>*@
+                    </p>
+                </div>
+        </div>
+        <div class="item">
+            <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
+                <img src="~/images/banner3.png" alt="Microsoft Azure" class="img-responsive" />
+            </a>
+                <div class="carousel-caption" role="option">
+                    <p>
+                        @*<a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
+                            <img src="~/images/banner3.png" alt="Microsoft Azure" class="img-responsive" />
+                        </a>*@
+                    </p>
+                </div>
+        </div>
+    </div>
+    @*<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>*@
+</div>
+<br />
+<br />
+<div class="row">
+    <div class="col-md-3">
+        <p><a href="https://www.lntinfotech.com/services/cloud/">Cloud</a></p>
+        <p style="color:darkorchid"> Business Transformation at Exponential Speed</p>
+
+    </div>
+    <div class="col-md-3">
+        <p><a href="https://www.lntinfotech.com/digital-transformation/fastlane/">Digital</a></p>
+        <p><a href="https://www.lntinfotech.com/digital-transformation/fastlane/">Experience Speed</a></p>
+       
+    </div>
+    <div class="col-md-3">
+        <p><a href="https://www.fosfor.com/refract/">Data</a></p>
+        <p style="font-size:large"><a href="https://www.fosfor.com/refract/">Scale AI and ML Journey with refract</a></p>
+
+    </div>
+
+</div>

@@ -1,0 +1,31 @@
+﻿@page "{projectId:int}"
+
+@model WebApp.Pages.Project.ProjectDetailsModel
+
+@{
+    ViewData["Title"] = "ProjectDetails";
+}
+
+<h2> @Model.Project.PName Details</h2>
+
+<p><b>Project Id :</b>  @Model.Project.PId</p></br>
+
+<p><b>Project Manager :</b>  @Model.Project.PManager</p></br>
+
+<p>
+    <b>Skills Required for this Project :</b> @Model.Project.Skill1 &nbsp; @Model.Project.Skill2 &nbsp; @Model.Project.Skill3
+
+</p>
+
+@if (Model.UpdateMessage1 != null)
+{
+    <div class="alert alert-info">@Model.UpdateMessage1</div>
+}
+
+@if (Model.AddMessage1 != null)
+{
+    <div class="alert alert-info">@Model.AddMessage1</div>
+}
+
+
+<a asp-page="./Projects" class="btn btn-default">All Projects</a>

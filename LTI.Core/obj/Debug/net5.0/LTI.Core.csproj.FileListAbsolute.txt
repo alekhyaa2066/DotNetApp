@@ -1,0 +1,15 @@
+E:\Paas\C#\Week-2\Practice\LTI.Core\bin\Debug\net5.0\LTI.Core.deps.json
+E:\Paas\C#\Week-2\Practice\LTI.Core\bin\Debug\net5.0\LTI.Core.dll
+E:\Paas\C#\Week-2\Practice\LTI.Core\bin\Debug\net5.0\ref\LTI.Core.dll
+E:\Paas\C#\Week-2\Practice\LTI.Core\bin\Debug\net5.0\LTI.Core.pdb
+E:\Paas\C#\Week-2\Practice\LTI.Core\obj\Debug\net5.0\LTI.Core.csproj.AssemblyReference.cache
+E:\Paas\C#\Week-2\Practice\LTI.Core\obj\Debug\net5.0\LTI.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\Paas\C#\Week-2\Practice\LTI.Core\obj\Debug\net5.0\LTI.Core.AssemblyInfoInputs.cache
+E:\Paas\C#\Week-2\Practice\LTI.Core\obj\Debug\net5.0\LTI.Core.AssemblyInfo.cs
+E:\Paas\C#\Week-2\Practice\LTI.Core\obj\Debug\net5.0\LTI.Core.csproj.CoreCompileInputs.cache
+E:\Paas\C#\Week-2\Practice\LTI.Core\obj\Debug\net5.0\LTI.Core.dll
+E:\Paas\C#\Week-2\Practice\LTI.Core\obj\Debug\net5.0\ref\LTI.Core.dll
+E:\Paas\C#\Week-2\Practice\LTI.Core\obj\Debug\net5.0\LTI.Core.pdb
+E:\Paas\C#\Week-2\Practice\LTI.Core\bin\Debug\net5.0\LTI.Core.runtimeconfig.json
+E:\Paas\C#\Week-2\Practice\LTI.Core\bin\Debug\net5.0\LTI.Core.runtimeconfig.dev.json
+E:\Paas\C#\Week-2\Practice\LTI.Core\obj\Debug\net5.0\LTI.Core.genruntimeconfig.cache

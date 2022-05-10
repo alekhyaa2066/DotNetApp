@@ -1,0 +1,32 @@
+﻿@page
+
+@model WebApp.Pages.Employee.EmployeesModel
+@{
+}
+
+<h2 style="text-align:center">Employees</h2>
+
+<form method="get">
+    <div class="form-group">
+        <p>Search Employees by their Skill</p>
+        <div class=" input-group">
+            <input type="search" class="form-control" asp-for="ReqSkill" />
+            @*asp-for is working against an instance of pageModel. It don't need "Model".'
+                asp-for does two-way data binding(set the value of input to match the value of output(so that is visible in search bar) *@
+            <span class="input-group-btn">
+                <button class="btn btn-default">
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+
+            </span>
+
+        </div>
+    </div>
+</form>
+@foreach (var emp in Model.Emps)  @*It is a partial view so that it can be reused in other page as well *@
+            {
+                <partial name="_SummaryEmployee" model="emp"/>
+            }
+
+    <a asp-page="\EditEmployee" class="btn btn-primary">Add Employee</a>
+
